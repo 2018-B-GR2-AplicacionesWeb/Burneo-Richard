@@ -43,3 +43,86 @@ function imprimirEnConsola(texto) {
 }
 
 saludar('andres',imprimirEnConsola);
+
+//var
+
+var varialbe = 'valor'; //Nunca Mas
+
+let edad =29; //Mutar objeto = ...
+edad = 30;
+
+const casado = false; // Inmutable
+// casdo = true;
+
+const edadV2 = 30; //Inmutable
+//edadV2 = 31;
+
+const nombre = 'Adrian'; //Inmutable
+//nombre= richard;
+
+const hijos = null ;
+//hijos = 1;
+
+const mascotas = {};
+//mascotas = 1;
+mascotas.cachetes = 'Cachetes'; //metodos
+mascotas.numero= '1';
+delete mascotas.numero;
+
+
+const carros= [];
+//carros= [];
+carros.push('FINAL'); //metodos
+carros.pop();
+carros [0] = 123;
+
+
+// Anonymous Functions
+//Asignar variables
+const saludarV2 = function () {
+    // implementacion
+}
+//Asignar a variables
+const usuario = [
+    nombre: 'Richard',
+    saludar: function () {
+        retur this.nombre
+    }
+]
+//  enviar como parametros
+saludar ("Adrian", function (texto) {
+    console.log(texto);
+} );
+
+// fat arrow functions -> =>
+
+const saludarV3 = () => {
+  // implementacion
+};
+saludarV3();
+
+const usuarioV2 = {
+    nombre: 'Richard',
+    saludar: () => {
+
+    }
+};
+
+saludar ("Richard", (texto) => {
+    console.log(texto);
+});
+
+const sumarDosNumerosV2 = function (numeroUno, NumeroDos){
+    return numeroUno + numeroDos;
+}
+const sumarDosNumerosV2 = (numeroUno, NumeroDos)=> numeroUno + numeroDos;
+
+const saludarV5 = saludo => console.log(saludo);
+
+const saludarV6 = saludo => {
+    return console.log(saludo)
+};
+
+
+
+
