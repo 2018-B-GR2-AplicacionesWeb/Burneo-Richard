@@ -50,7 +50,7 @@
           <entry key="gitignore" value="36" />
           <entry key="js" value="4431" />
           <entry key="md" value="29" />
-          <entry key="ts" value="1380" />
+          <entry key="ts" value="1684" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
@@ -58,7 +58,7 @@
         <counts>
           <entry key="JavaScript" value="4431" />
           <entry key="PLAIN_TEXT" value="70" />
-          <entry key="TypeScript" value="1380" />
+          <entry key="TypeScript" value="1684" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -96,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/02-tyescript/01-tipos-variables.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="66" column="2" selection-start-line="66" selection-start-column="2" selection-end-line="66" selection-end-column="2" />
+            <state relative-caret-position="-68">
+              <caret line="43" column="10" lean-forward="true" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -108,17 +108,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02-tyescript/02-observables.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+              <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -212,8 +212,8 @@
         <option value="$PROJECT_DIR$/01-Javascript/05-nodejs/app.js" />
         <option value="$PROJECT_DIR$/01-Javascript/08-promesas.js" />
         <option value="$PROJECT_DIR$/02-tyescript/01-tipos-variables.ts" />
-        <option value="$PROJECT_DIR$/02-tyescript/02-observables.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/02-tyescript/02-observables.ts" />
       </list>
     </option>
   </component>
@@ -318,6 +318,12 @@
               <item name="Burneo-Richard" type="b2602c69:ProjectViewProjectNode" />
               <item name="Burneo-Richard" type="462c0819:PsiDirectoryNode" />
               <item name="02-tyescript" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Burneo-Richard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Burneo-Richard" type="462c0819:PsiDirectoryNode" />
+              <item name="02-tyescript" type="462c0819:PsiDirectoryNode" />
               <item name="01-tipos-variables.ts" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
@@ -404,12 +410,12 @@
       <workItem from="1540319890068" duration="1496000" />
       <workItem from="1540408802676" duration="6312000" />
       <workItem from="1540926904722" duration="5680000" />
-      <workItem from="1541532072600" duration="4650000" />
+      <workItem from="1541532072600" duration="5958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19488000" />
+    <option name="totallyTimeSpent" value="20796000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -594,6 +600,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-tyescript/02-observables.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/02-tyescript/01-tipos-variables.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408">
@@ -605,22 +625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/02-tyescript/01-tipos-variables.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="66" column="2" selection-start-line="66" selection-start-column="2" selection-end-line="66" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02-tyescript/02-observables.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        <state relative-caret-position="-68">
+          <caret line="43" column="10" lean-forward="true" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
         </state>
       </provider>
     </entry>
