@@ -18,14 +18,14 @@ const adrian: { //Interface
     apellido?: string;
     edad?: number;
     estado?: 'Activo' | 'Inactivo';
-    saludar?: (nombre:string)=> string;
+   // saludar?: (nombre:string)=> string;
 } = { // JSON
     nombre: 'Adrian',
     edad: 21,
     //estado = 'Inactivo',
     //casado:false,
     //fechaNacimiento: new Date(),
-    saludar: () =>
+    //saludar: () =>
         {
         return '';
         }
@@ -38,15 +38,14 @@ let fecha = new Date ('2018-10-01');
 
 
 function saludar (
-    nombre: string,
-    apellido?: string,
+    nombre: string
+    apellido?: string
     ...otrosNombre: number []
 ):string {
     return 'hola';
-}
+};
 
-let respuestaSaludar = <number> saludar (nombre: 'Adrian', apellido:'Eguez', otrosNombre: 1,2,1,1,2,3);
-
+let respuestaSaludar = <number> saludar (nombre:'Adrian' , apellido:'Eguez', otrosNombre: [1,2,1,1,2,3]);
 
 console.log();
 
@@ -56,11 +55,11 @@ console.log();
 
 class UsarioClase{
   public nombre: string;
-}
+};
 
 interface UsuarioInterface {
     nombre: string;
-}
+};
 
 const usuario: UsuarioInterface = {
     nombre: 'Adrian'
