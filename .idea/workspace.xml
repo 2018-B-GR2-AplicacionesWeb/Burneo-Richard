@@ -22,8 +22,8 @@
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -31,7 +31,7 @@
           <entry key="04-operadores" value="2" />
           <entry key="gitignore" value="3" />
           <entry key="js" value="14" />
-          <entry key="json" value="2" />
+          <entry key="json" value="3" />
           <entry key="md" value="2" />
           <entry key="ts" value="2" />
           <entry key="txt" value="1" />
@@ -39,7 +39,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="1" />
+          <entry key="JSON" value="2" />
           <entry key="JavaScript" value="14" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="TypeScript" value="4" />
@@ -51,7 +51,7 @@
           <entry key="gitignore" value="36" />
           <entry key="js" value="4431" />
           <entry key="md" value="29" />
-          <entry key="ts" value="1712" />
+          <entry key="ts" value="2530" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
@@ -59,27 +59,18 @@
         <counts>
           <entry key="JavaScript" value="4431" />
           <entry key="PLAIN_TEXT" value="70" />
-          <entry key="TypeScript" value="1712" />
+          <entry key="TypeScript" value="2530" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="3" />
+          <entry key="TypeScriptServerServiceImpl" value="4" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-Javascript/05-nodejs/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Javascript/08-promesas.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -96,20 +87,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02-tyescript/01-tipos-variables.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+            <state relative-caret-position="272">
+              <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/02-tyescript/02-observables.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="65" column="10" lean-forward="true" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02-tyescript/02-observables.ts">
+        <entry file="file://$PROJECT_DIR$/01-Javascript/adrian.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            <state relative-caret-position="102">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -212,8 +212,8 @@
         <option value="$PROJECT_DIR$/01-Javascript/05-nodejs/app.js" />
         <option value="$PROJECT_DIR$/01-Javascript/08-promesas.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/02-tyescript/02-observables.ts" />
         <option value="$PROJECT_DIR$/02-tyescript/01-tipos-variables.ts" />
+        <option value="$PROJECT_DIR$/02-tyescript/02-observables.ts" />
       </list>
     </option>
   </component>
@@ -303,7 +303,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -331,12 +330,13 @@
               <item name="Burneo-Richard" type="b2602c69:ProjectViewProjectNode" />
               <item name="Burneo-Richard" type="462c0819:PsiDirectoryNode" />
               <item name="02-tyescript" type="462c0819:PsiDirectoryNode" />
-              <item name="01-tipos-variables.ts" type="620a8d5e:NestingTreeNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -418,11 +418,12 @@
       <workItem from="1540926904722" duration="5680000" />
       <workItem from="1541532072600" duration="6114000" />
       <workItem from="1541614939415" duration="1826000" />
+      <workItem from="1541617547266" duration="5665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22778000" />
+    <option name="totallyTimeSpent" value="28443000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -435,8 +436,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.122934565" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.122934565" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
@@ -449,8 +451,8 @@
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.4990086" weight="0.32765958" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4976867" visible="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50231326" side_tool="true" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4970258" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5029742" side_tool="true" visible="true" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -461,6 +463,7 @@
     <option name="exactExcludedFiles">
       <list>
         <option value="$PROJECT_DIR$/02-tyescript/01-tipos-variables.js" />
+        <option value="$PROJECT_DIR$/02-tyescript/02-observables.js" />
       </list>
     </option>
   </component>
@@ -495,13 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-Javascript/adrian.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -576,13 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02-tyescript/02-observables.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -629,8 +618,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/02-tyescript/01-tipos-variables.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        <state relative-caret-position="272">
+          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-Javascript/adrian.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-tyescript/02-observables.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="65" column="10" lean-forward="true" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
         </state>
       </provider>
     </entry>
