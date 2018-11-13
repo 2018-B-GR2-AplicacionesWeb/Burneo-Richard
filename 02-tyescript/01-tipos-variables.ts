@@ -45,9 +45,9 @@ function saludar (
     return 'hola';
 };
 
-let respuestaSaludar = <number> saludar (nombre:'Adrian' , apellido:'Eguez', otrosNombre: [1,2,1,1,2,3]);
-
 console.log();
+
+let respuestaSaludar = <number> saludar ('Adrian' , 'Eguez', [1,2,1,1,2,3]);
 
 /*const saludarDos= (nombre:string) :string => {
 
