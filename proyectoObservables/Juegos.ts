@@ -3,16 +3,14 @@ declare var require: any;
 const inquirer = require('inquirer');
 const fs = require("fs");
 const rxjs = require("rxjs");
-const timer = require('rxjs').timer;
 const mergeMap = require('rxjs/operators').mergeMap;
 const map = require('rxjs/operators').map;
-const retryWhen = require('rxjs/operators').retryWhen;
-const delayWhen = require('rxjs/operators').delayWhen
 
 
 
 function conectarDB(nombreArchivo) {
-    // @ts-ignore
+
+    // @ts-ignore11111
     return new Promise(
         (resolve, reject) => {
             fs.readFile(
@@ -22,7 +20,7 @@ function conectarDB(nombreArchivo) {
                     if (error) {
                         fs.writeFile(
                             nombreArchivo,
-                            '{"usuarios":[],"juego":[]}',
+                            '{"usuarios":[],"juegos":[]}',
                             (error) => {
                                 if (error) {
                                     reject({
@@ -33,7 +31,7 @@ function conectarDB(nombreArchivo) {
                                 else {
                                     resolve({
                                         mensaje: 'bd leida',
-                                        bdd: JSON.parse('{"usuarios":[],"juego":[]}')
+                                        bdd: JSON.parse('{"usuarios":[],"juegos":[]}')
                                     })
                                 }
                             }
@@ -126,16 +124,18 @@ function opcionesRespuesta() {
                             )
                         );
                 case 'Buscar Juego':
-                    return preguntarJuegoB(respuestaBDD);
+                    return preguntarJuegoBuscar(respuestaBDD);
 
                 case 'Actualizar Juego':
-                    return preguntarJuegoA(respuestaBDD);
+                    return preguntarJuegoActualizar(respuestaBDD);
                     break;
 
                 /* case 'Devolver Juego':
                      return preguntarIdUsuario(respuestaBDD);
-                 case 'Borrar':
-                     break;*/
+                 */
+                 case 'Borrar Juego':
+                     return preguntarJuegoBorrar(respuestaBDD);
+                     break;
             }
         }
     )
@@ -149,20 +149,23 @@ function ejecutarAcccion() {
                 case 'Crear Juego':
                     const Juego = respuestaBDD.Juego;
                     console.log(Juego)
-                   respuestaBDD.bdd.juego.push(Juego);
+                   respuestaBDD.bdd.juegos.push(Juego);
                     return respuestaBDD;
                 case 'Buscar Juego':
                     const indiced = respuestaBDD.indiceJuego;
                     //console.log(indiced)
-                    console.log(respuestaBDD.bdd.juego[indiced])
+                    console.log(respuestaBDD.bdd.juegos[indiced])
                     return respuestaBDD;
                 case 'Actualizar Juego':
                     const indice = respuestaBDD.indiceJuego;
-                    respuestaBDD.bdd.juego[indice].nombre = respuestaBDD.Juego.nombre;
+                    respuestaBDD.bdd.juegos[indice].nombre = respuestaBDD.Juego.nombre;
 
                     return respuestaBDD;
                 case 'Borrar Juego':
 
+                    const juegoBorrar= respuestaBDD.indiceJuego;
+                    respuestaBDD.bdd.juegos.splice(juegoBorrar, 1);
+                    return respuestaBDD;
                     break;
                 case 'Salir':
                     break;
@@ -221,8 +224,8 @@ const preguntaCrear = [
     },
     {
         type: 'input',
-        name: 'autor',
-        message: 'Cual es el Autor de este Juego?'
+        name: 'creador',
+        message: 'Cual es el Creador de este Juego?'
     },
     {
         type: 'input',
@@ -269,7 +272,7 @@ interface RespuestaBD {
 
 interface BDD {
     usuarios: Usuario[] | any;
-    juego: Juego[]|any;
+    juegos: Juego[]|any;
 }
 
 
@@ -281,7 +284,7 @@ interface Usuario {
 interface Juego {
     id: number;
     nombre: string;
-    autor: string;
+    creador: string;
     idUsuario: number;
 }
 
@@ -307,21 +310,21 @@ const preguntaEdicionJuego = [
 ];
 
 
-function preguntarJuegoB(respuestaBDD: RespuestaBD) {
+function preguntarJuegoBuscar(respuestaBDD: RespuestaBD) {
    return rxjs
         .from(inquirer.prompt(preguntaBuscarB))
         .pipe(
             map( // RESP ANT OBS
                 (respuesta: BuscarJuegoPorId) => {
 
-                    const indiceJuegoB = respuestaBDD.bdd.juego.findIndex( // -1
+                    const indiceJuegoB = respuestaBDD.bdd.juegos.findIndex( // -1
                         (Juego: any) => {
                             return Juego.id === respuesta.idJuego
                         }
                     );
                     if (indiceJuegoB === -1) {
                         console.log('No existe el Juego que busca');
-                        return preguntarJuegoB(respuestaBDD);
+                        return preguntarJuegoBuscar(respuestaBDD);
                     } else {
 
                         respuestaBDD.indiceJuego = indiceJuegoB;
@@ -336,21 +339,21 @@ function preguntarJuegoB(respuestaBDD: RespuestaBD) {
 }
 
 
-function preguntarJuegoA(respuestaBDD: RespuestaBD) {
+function preguntarJuegoActualizar(respuestaBDD: RespuestaBD) {
     return rxjs
         .from(inquirer.prompt(preguntaBuscar))
         .pipe(
             mergeMap( // RESP ANT OBS
                 (respuesta: BuscarJuegoPorId) => {
                     console.log(respuesta)
-                    const indiceJuego = respuestaBDD.bdd.juego.findIndex( // -1
+                    const indiceJuego = respuestaBDD.bdd.juegos.findIndex( // -1
                         (Juego: any) => {
                             return Juego.id === respuesta.idJuego
                         }
                     );
                     if (indiceJuego === -1) {
                         console.log('No existe tal Juego');
-                        return preguntarJuegoB(respuestaBDD);
+                        return preguntarJuegoBuscar(respuestaBDD);
                     } else {
                         respuestaBDD.indiceJuego = indiceJuego;
                         return rxjs
@@ -361,13 +364,41 @@ function preguntarJuegoA(respuestaBDD: RespuestaBD) {
                                         respuestaBDD.Juego ={
                                             id:null,
                                             nombre:nombre.nombre,
-                                            autor: null,
+                                            creador: null,
                                             idUsuario: null
                                         };
                                         return respuestaBDD;
                                     }
                                 )
                             );
+                    }
+                }
+            )
+        );
+}
+
+function preguntarJuegoBorrar (respuestaBDD: RespuestaBD) {
+    return rxjs
+        .from(inquirer.prompt(preguntaBuscarB))
+        .pipe(
+            map( // RESP ANT OBS
+                (respuesta: BuscarJuegoPorId) => {
+
+                    const indiceJuegoB = respuestaBDD.bdd.juegos.findIndex( // -1
+                        (Juego: any) => {
+                            return Juego.id === respuesta.idJuego
+                        }
+                    );
+                    if (indiceJuegoB === -1) {
+                        console.log('No existe el Juego que busca');
+                        return preguntarJuegoBorrar(respuestaBDD);
+                    } else {
+
+                        respuestaBDD.indiceJuego = indiceJuegoB;
+                        //console.log(respuestaBDD.indiceJuego)
+                        return respuestaBDD
+
+
                     }
                 }
             )

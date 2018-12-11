@@ -34,6 +34,13 @@ export class AppController {
     )
 
   }
+  @Get('inicio')
+  inicio(){
+    //header 1
+      return '<h1>Saludo</h1>'
+  }
+
+
 
   @Get('SaludarOBservable')
   saludarObservable(): Observable <string>{

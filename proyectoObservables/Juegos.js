@@ -9,17 +9,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 const inquirer = require('inquirer');
 const fs = require("fs");
 const rxjs = require("rxjs");
-const timer = require('rxjs').timer;
 const mergeMap = require('rxjs/operators').mergeMap;
 const map = require('rxjs/operators').map;
-const retryWhen = require('rxjs/operators').retryWhen;
-const delayWhen = require('rxjs/operators').delayWhen;
 function conectarDB(nombreArchivo) {
-    // @ts-ignore
+    // @ts-ignore11111
     return new Promise((resolve, reject) => {
         fs.readFile(nombreArchivo, 'utf-8', (error, contenidoArchivo) => {
             if (error) {
-                fs.writeFile(nombreArchivo, '{"usuarios":[],"juego":[]}', (error) => {
+                fs.writeFile(nombreArchivo, '{"usuarios":[],"juegos":[]}', (error) => {
                     if (error) {
                         reject({
                             mensaje: 'Error al accerder a la base de datos',
@@ -29,7 +26,7 @@ function conectarDB(nombreArchivo) {
                     else {
                         resolve({
                             mensaje: 'bd leida',
-                            bdd: JSON.parse('{"usuarios":[],"juego":[]}')
+                            bdd: JSON.parse('{"usuarios":[],"juegos":[]}')
                         });
                     }
                 });
@@ -85,14 +82,16 @@ function opcionesRespuesta() {
                     return respuestaBDD;
                 }));
             case 'Buscar Juego':
-                return preguntarJuegoB(respuestaBDD);
+                return preguntarJuegoBuscar(respuestaBDD);
             case 'Actualizar Juego':
-                return preguntarJuegoA(respuestaBDD);
+                return preguntarJuegoActualizar(respuestaBDD);
                 break;
             /* case 'Devolver Juego':
                  return preguntarIdUsuario(respuestaBDD);
-             case 'Borrar':
-                 break;*/
+             */
+            case 'Borrar Juego':
+                return preguntarJuegoBorrar(respuestaBDD);
+                break;
         }
     });
 }
@@ -104,18 +103,21 @@ function ejecutarAcccion() {
             case 'Crear Juego':
                 const Juego = respuestaBDD.Juego;
                 console.log(Juego);
-                respuestaBDD.bdd.juego.push(Juego);
+                respuestaBDD.bdd.juegos.push(Juego);
                 return respuestaBDD;
             case 'Buscar Juego':
                 const indiced = respuestaBDD.indiceJuego;
                 //console.log(indiced)
-                console.log(respuestaBDD.bdd.juego[indiced]);
+                console.log(respuestaBDD.bdd.juegos[indiced]);
                 return respuestaBDD;
             case 'Actualizar Juego':
                 const indice = respuestaBDD.indiceJuego;
-                respuestaBDD.bdd.juego[indice].nombre = respuestaBDD.Juego.nombre;
+                respuestaBDD.bdd.juegos[indice].nombre = respuestaBDD.Juego.nombre;
                 return respuestaBDD;
             case 'Borrar Juego':
+                const juegoBorrar = respuestaBDD.indiceJuego;
+                respuestaBDD.bdd.juegos.splice(juegoBorrar, 1);
+                return respuestaBDD;
                 break;
             case 'Salir':
                 break;
@@ -161,8 +163,8 @@ const preguntaCrear = [
     },
     {
         type: 'input',
-        name: 'autor',
-        message: 'Cual es el Autor de este Juego?'
+        name: 'creador',
+        message: 'Cual es el Creador de este Juego?'
     },
     {
         type: 'input',
@@ -197,18 +199,18 @@ const preguntaEdicionJuego = [
         message: 'Cual es el nuevo nombre del Juego'
     },
 ];
-function preguntarJuegoB(respuestaBDD) {
+function preguntarJuegoBuscar(respuestaBDD) {
     return rxjs
         .from(inquirer.prompt(preguntaBuscarB))
         .pipe(map(// RESP ANT OBS
     (respuesta) => {
-        const indiceJuegoB = respuestaBDD.bdd.juego.findIndex(// -1
+        const indiceJuegoB = respuestaBDD.bdd.juegos.findIndex(// -1
         (Juego) => {
             return Juego.id === respuesta.idJuego;
         });
         if (indiceJuegoB === -1) {
             console.log('No existe el Juego que busca');
-            return preguntarJuegoB(respuestaBDD);
+            return preguntarJuegoBuscar(respuestaBDD);
         }
         else {
             respuestaBDD.indiceJuego = indiceJuegoB;
@@ -217,19 +219,19 @@ function preguntarJuegoB(respuestaBDD) {
         }
     }));
 }
-function preguntarJuegoA(respuestaBDD) {
+function preguntarJuegoActualizar(respuestaBDD) {
     return rxjs
         .from(inquirer.prompt(preguntaBuscar))
         .pipe(mergeMap(// RESP ANT OBS
     (respuesta) => {
         console.log(respuesta);
-        const indiceJuego = respuestaBDD.bdd.juego.findIndex(// -1
+        const indiceJuego = respuestaBDD.bdd.juegos.findIndex(// -1
         (Juego) => {
             return Juego.id === respuesta.idJuego;
         });
         if (indiceJuego === -1) {
             console.log('No existe tal Juego');
-            return preguntarJuegoB(respuestaBDD);
+            return preguntarJuegoBuscar(respuestaBDD);
         }
         else {
             respuestaBDD.indiceJuego = indiceJuego;
@@ -239,11 +241,31 @@ function preguntarJuegoA(respuestaBDD) {
                 respuestaBDD.Juego = {
                     id: null,
                     nombre: nombre.nombre,
-                    autor: null,
+                    creador: null,
                     idUsuario: null
                 };
                 return respuestaBDD;
             }));
+        }
+    }));
+}
+function preguntarJuegoBorrar(respuestaBDD) {
+    return rxjs
+        .from(inquirer.prompt(preguntaBuscarB))
+        .pipe(map(// RESP ANT OBS
+    (respuesta) => {
+        const indiceJuegoB = respuestaBDD.bdd.juegos.findIndex(// -1
+        (Juego) => {
+            return Juego.id === respuesta.idJuego;
+        });
+        if (indiceJuegoB === -1) {
+            console.log('No existe el Juego que busca');
+            return preguntarJuegoBuscar(respuestaBDD);
+        }
+        else {
+            respuestaBDD.indiceJuego = indiceJuegoB;
+            //console.log(respuestaBDD.indiceJuego)
+            return respuestaBDD;
         }
     }));
 }

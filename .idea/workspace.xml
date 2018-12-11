@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3862ec3d-ba24-4f78-9492-45eb10a53b4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Examen1bimestre/Examen.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen1bimestre/Practicaexamen1Bimestre.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoObservables/UsuariosBD.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectoObservables/Juegos.js" beforeDir="false" afterPath="$PROJECT_DIR$/proyectoObservables/Juegos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectoObservables/Juegos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyectoObservables/Juegos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectoObservables/UsuariosBD.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectoObservables/juegosDB.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectoObservables/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/proyectoObservables/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/videos/src/app.controller.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -83,92 +86,113 @@
     <session id="50574961">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="1" />
-          <entry key="json" value="7" />
+          <entry key="gitignore" value="2" />
+          <entry key="js" value="2" />
+          <entry key="json" value="9" />
           <entry key="md" value="1" />
-          <entry key="ts" value="3" />
+          <entry key="ts" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="7" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="TypeScript" value="3" />
+          <entry key="JSON" value="9" />
+          <entry key="JavaScript" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="TypeScript" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="2" />
+          <entry key="TypeScriptServerServiceImpl" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="json" value="125" />
+          <entry key="json" value="127" />
           <entry key="md" value="3" />
-          <entry key="ts" value="803" />
+          <entry key="ts" value="1174" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="125" />
+          <entry key="JSON" value="127" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="TypeScript" value="803" />
+          <entry key="TypeScript" value="1174" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Burneo-Richard" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Examen1bimestre/Examen.ts">
+        <entry file="file://$PROJECT_DIR$/proyectoObservables/Juegos.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            <state relative-caret-position="17">
+              <caret line="125" column="22" selection-start-line="125" selection-start-column="22" selection-end-line="125" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proyectoObservables/.gitignore">
+        <entry file="file://$PROJECT_DIR$/videos/src/app.controller.spec.ts">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/proyectoObservables/Juegos.ts">
+        <entry file="file://$PROJECT_DIR$/videos/src/app.controller.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="334" column="10" selection-start-line="334" selection-start-column="10" selection-end-line="334" selection-end-column="10" />
+            <state relative-caret-position="511">
+              <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proyectoObservables/package-lock.json">
+        <entry file="file://$PROJECT_DIR$/videos/src/app.module.ts">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proyectoObservables/juegosDB.json">
+        <entry file="file://$PROJECT_DIR$/videos/src/app.service.ts">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videos/src/mi-codigo.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="67" selection-start-line="1" selection-start-column="67" selection-end-line="1" selection-end-column="67" />
+            <state relative-caret-position="34">
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proyectoObservables/UsuariosBD.json">
+        <entry file="file://$PROJECT_DIR$/proyectoObservables/node_modules/rxjs/internal/util/subscribeToPromise.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="111" selection-start-column="111" selection-end-column="111" />
+            <state relative-caret-position="17">
+              <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videos/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -183,22 +207,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/videos/src/main.ts">
+        <entry file="file://$PROJECT_DIR$/02-tyescript/02-observables.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/videos/src/app.controller.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+            <state relative-caret-position="17">
+              <caret line="1" column="24" selection-start-line="1" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -216,8 +228,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dependen</find>
-      <find>err</find>
       <find>sal</find>
       <find>buscar</find>
       <find>Inicializar</find>
@@ -227,11 +237,27 @@
       <find>preguntarOpcionesMenu</find>
       <find>preguntaMenu</find>
       <find>persona</find>
-      <find>ini</find>
       <find>bdd</find>
       <find>inter</find>
       <find>Libro</find>
       <find>eliminar</find>
+      <find>promi</find>
+      <find>auto</find>
+      <find>preguntarJuego</find>
+      <find>preguntarJueg</find>
+      <find>preguntaEdicionJuego</find>
+      <find>autor</find>
+      <find>ejecu</find>
+      <find>ini</find>
+      <find>find</find>
+      <find>fin</find>
+      <find>buscarJu</find>
+      <find>ret</find>
+      <find>Juego</find>
+      <find>return</find>
+      <find>borra</find>
+      <find>aut</find>
+      <find>menu</find>
     </findStrings>
     <replaceStrings>
       <replace>Juego</replace>
@@ -272,14 +298,16 @@
         <option value="$PROJECT_DIR$/Deber1/main.ts" />
         <option value="$PROJECT_DIR$/videos/src/mi-codigo.ts" />
         <option value="$PROJECT_DIR$/videos/src/main.ts" />
-        <option value="$PROJECT_DIR$/videos/src/app.controller.ts" />
         <option value="$PROJECT_DIR$/Examen1bimestre/README.md" />
         <option value="$PROJECT_DIR$/Examen1bimestre/examen1Bimestre.ts" />
         <option value="$PROJECT_DIR$/Examen1bimestre/Examen.ts" />
         <option value="$PROJECT_DIR$/proyectoObservables/bdd.json" />
         <option value="$PROJECT_DIR$/proyectoObservables/ibreriaDB.json" />
         <option value="$PROJECT_DIR$/proyectoObservables/libreriaDB.json" />
+        <option value="$PROJECT_DIR$/proyectoObservables/juegosDB.json" />
+        <option value="$PROJECT_DIR$/proyectoObservables/UsuariosBD.json" />
         <option value="$PROJECT_DIR$/proyectoObservables/Juegos.ts" />
+        <option value="$PROJECT_DIR$/videos/src/app.controller.ts" />
       </list>
     </option>
   </component>
@@ -360,25 +388,59 @@
       <path value="$PROJECT_DIR$/02-tyescript/node_modules/rxjs/testing/package.json" />
       <path value="$PROJECT_DIR$/02-tyescript/node_modules/rxjs/webSocket/package.json" />
       <path value="$PROJECT_DIR$/02-tyescript/node_modules/tslib/package.json" />
-      <path value="$PROJECT_DIR$/Examen1bimestre/node_modules/rxjs/ajax/package.json" />
-      <path value="$PROJECT_DIR$/Examen1bimestre/node_modules/rxjs/internal-compatibility/package.json" />
-      <path value="$PROJECT_DIR$/Examen1bimestre/node_modules/rxjs/operators/package.json" />
-      <path value="$PROJECT_DIR$/Examen1bimestre/node_modules/rxjs/package.json" />
-      <path value="$PROJECT_DIR$/Examen1bimestre/node_modules/rxjs/src/ajax/package.json" />
-      <path value="$PROJECT_DIR$/Examen1bimestre/node_modules/rxjs/src/internal-compatibility/package.json" />
-      <path value="$PROJECT_DIR$/Examen1bimestre/node_modules/rxjs/src/operators/package.json" />
-      <path value="$PROJECT_DIR$/Examen1bimestre/node_modules/rxjs/src/testing/package.json" />
-      <path value="$PROJECT_DIR$/Examen1bimestre/node_modules/rxjs/src/webSocket/package.json" />
-      <path value="$PROJECT_DIR$/Examen1bimestre/node_modules/rxjs/testing/package.json" />
-      <path value="$PROJECT_DIR$/Examen1bimestre/node_modules/rxjs/webSocket/package.json" />
-      <path value="$PROJECT_DIR$/Examen1bimestre/node_modules/tslib/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/ansi-escapes/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/chardet/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/cli-cursor/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/cli-width/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/color-convert/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/color-name/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/escape-string-regexp/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/external-editor/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/figures/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/has-flag/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/inquirer/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/is-promise/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/lodash/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/mimic-fn/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/mute-stream/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/onetime/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/os-tmpdir/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/restore-cursor/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/run-async/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/rxjs/ajax/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/rxjs/internal-compatibility/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/rxjs/operators/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/rxjs/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/rxjs/src/ajax/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/rxjs/src/internal-compatibility/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/rxjs/src/operators/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/rxjs/src/testing/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/rxjs/src/webSocket/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/rxjs/testing/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/rxjs/webSocket/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/safer-buffer/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/signal-exit/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/string-width/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/strip-ansi/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/through/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/tmp/package.json" />
+      <path value="$PROJECT_DIR$/proyectoObservables/node_modules/tslib/package.json" />
       <path value="$PROJECT_DIR$/videos/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
-    <option name="width" value="1944" />
-    <option name="height" value="1104" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1099" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -396,12 +458,23 @@
             <path>
               <item name="Burneo-Richard" type="b2602c69:ProjectViewProjectNode" />
               <item name="Burneo-Richard" type="462c0819:PsiDirectoryNode" />
+              <item name="02-tyescript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Burneo-Richard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Burneo-Richard" type="462c0819:PsiDirectoryNode" />
               <item name="proyectoObservables" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Burneo-Richard" type="b2602c69:ProjectViewProjectNode" />
               <item name="Burneo-Richard" type="462c0819:PsiDirectoryNode" />
               <item name="videos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Burneo-Richard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Burneo-Richard" type="462c0819:PsiDirectoryNode" />
+              <item name="videos" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -497,11 +570,13 @@
       <workItem from="1542220115288" duration="8923000" />
       <workItem from="1543432850514" duration="6353000" />
       <workItem from="1544022720551" duration="1747000" />
+      <workItem from="1544031709026" duration="7391000" />
+      <workItem from="1544556039361" duration="256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50250000" />
+    <option name="totallyTimeSpent" value="57897000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -513,14 +588,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1554" height="882" extended-state="0" />
+    <frame x="-8" y="-8" width="1551" height="879" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11733685" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49865952" visible="true" weight="0.11756935" />
+      <window_info id="Structure" order="1" sideWeight="0.502" side_tool="true" weight="0.11764706" />
+      <window_info active="true" id="Favorites" order="2" sideWeight="0.5013405" side_tool="true" visible="true" weight="0.11756935" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49967042" weight="0.32977304" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49967042" weight="0.32885906" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49504295" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
@@ -528,8 +604,8 @@
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.4990086" weight="0.32765958" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49110085" weight="0.3271028" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="11" sideWeight="0.5003296" side_tool="true" visible="true" weight="0.3271028" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49110085" weight="0.32885906" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5003296" side_tool="true" weight="0.32666665" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -562,7 +638,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/01-Javascript/12.js" />
     <entry file="file://$PROJECT_DIR$/01-Javascript/04-operadores" />
     <entry file="file://$PROJECT_DIR$/Readme.md" />
     <entry file="file://$PROJECT_DIR$/richard.md">
@@ -646,13 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02-tyescript/02-observables.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01-Javascript/adrian.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -712,56 +780,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videos/src/app.controller.spec.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos/src/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos/src/app.service.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Deber1/baseDeDatos" />
     <entry file="file://$PROJECT_DIR$/Deber1/main.ts" />
     <entry file="file://$PROJECT_DIR$/Deber1/clases.ts" />
-    <entry file="file://$PROJECT_DIR$/videos/src/mi-codigo.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Deber1/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/videos/nodemon-debug.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Examen1bimestre/README.md" />
+    <entry file="file://$PROJECT_DIR$/Examen1bimestre/Practicaexamen1Bimestre.ts" />
+    <entry file="file://$PROJECT_DIR$/Examen1bimestre/people.json" />
+    <entry file="file://$PROJECT_DIR$/proyectoObservables/ibreriaDB.json" />
+    <entry file="file://$PROJECT_DIR$/Examen1bimestre/Examen.ts" />
+    <entry file="file://$PROJECT_DIR$/videos/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyectoObservables/juegosDB.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyectoObservables/UsuariosBD.json" />
+    <entry file="file://$PROJECT_DIR$/proyectoObservables/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyectoObservables/Juegos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="64" selection-start-line="3" selection-start-column="64" selection-end-line="3" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyectoObservables/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyectoObservables/node_modules/rxjs/internal/util/subscribeToPromise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/videos/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Examen1bimestre/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Examen1bimestre/Practicaexamen1Bimestre.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2737">
-          <caret line="161" column="1" selection-start-line="161" selection-start-column="1" selection-end-line="164" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Examen1bimestre/people.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -772,57 +843,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videos/src/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos/src/app.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Examen1bimestre/Examen.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyectoObservables/ibreriaDB.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyectoObservables/UsuariosBD.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="111" selection-start-column="111" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyectoObservables/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyectoObservables/juegosDB.json">
+    <entry file="file://$PROJECT_DIR$/02-tyescript/02-observables.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="67" selection-start-line="1" selection-start-column="67" selection-end-line="1" selection-end-column="67" />
+          <caret line="1" column="24" selection-start-line="1" selection-end-line="2" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyectoObservables/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/proyectoObservables/Juegos.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="334" column="10" selection-start-line="334" selection-start-column="10" selection-end-line="334" selection-end-column="10" />
+        <state relative-caret-position="17">
+          <caret line="125" column="22" selection-start-line="125" selection-start-column="22" selection-end-line="125" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos/src/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos/src/mi-codigo.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos/src/app.service.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos/src/app.controller.spec.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos/src/app.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
         </state>
       </provider>
     </entry>
