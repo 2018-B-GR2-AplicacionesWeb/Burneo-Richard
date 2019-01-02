@@ -1,10 +1,11 @@
 {
   "name": "videos",
   "version": "0.0.0",
-  "description": "videos",
-  "author": "Richard Burneo",
+  "description": "Videos",
+  "author": "Adrian Eguez",
   "license": "MIT",
   "scripts": {
+    "listar:directorio": "tsc manin.ts --target es2015 && node main.js",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
@@ -22,6 +23,8 @@
     "@nestjs/common": "^5.4.0",
     "@nestjs/core": "^5.4.0",
     "@types/http-server": "^0.10.0",
+    "ejs": "^2.6.1",
+    "expressjs": "^1.0.1",
     "http-server": "^0.11.1",
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",
