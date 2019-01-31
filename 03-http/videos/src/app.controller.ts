@@ -9,11 +9,13 @@ import {
     Query,
     Param,
     Res,
-    Post, Body
+    Post, Body, Session, BadRequestException
 } from '@nestjs/common';
 import {AppService} from './app.service';
 import {Observable, of} from "rxjs";
 import {Usuario, UsuarioService} from "./usuario/usuario.service";
+import {ExpressionStatement} from "typescript";
+import {Code} from "typeorm";
 
 // http://192.168.1.2:3000/Usuario/saludar     METODO -> GET
 // http://192.168.1.2:3000/Usuario/salir   METODO -> POST
@@ -42,7 +44,10 @@ export class AppController {
         @Query() queryParams,
         @Query('nombre') nombre,
         @Headers('seguridad') seguridad,
+        @Session() sesion
     ): string { // metodo!
+        console.log('Sesion:', sesion);
+
         return nombre;
     }
 
@@ -80,5 +85,36 @@ export class AppController {
     saludarObservable(): Observable<string> { // metodo!
         return of('Hola mundo');
     }
+
+    @Post('login')
+    @HttpCode(200)
+    async loginMetodo(
+        @Body('username') username: string,
+        @Body('password') password: string,
+        @Res() response,
+        @Session() sesion
+    ) {
+        const identificado = await this._usuarioService
+            .login(username, password);
+
+        if (identificado) {
+
+            sesion.usuario = username;
+
+            response.redirect('/saludar')
+
+        } else {
+            throw new BadRequestException({mensaje: 'Error login'})
+        }
+
+    }
+
+    @Get('login')
+    loginVista(
+        @Res() response
+    ) {
+        response.render('login');
+    }
+
 
 }
